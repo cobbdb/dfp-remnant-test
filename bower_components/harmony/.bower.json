@@ -1,0 +1,45 @@
+{
+  "name": "harmony",
+  "authors": [
+    "Dan Cobb <cobbdb@gmail.com> (http://www.github.com/cobbdb)"
+  ],
+  "description": "Doubleclick JS API Helper",
+  "main": "dist/harmony.min.js",
+  "keywords": [
+    "doubleclick",
+    "ads",
+    "dfp",
+    "revenue",
+    "adslot",
+    "adunit",
+    "advertising"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "*.egg-info",
+    "tests",
+    "*.json",
+    "gruntfile.js",
+    "test"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "homepage": "https://github.com/cobbdb/harmony",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "version": "1.7.0",
+  "_release": "1.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.7.0",
+    "commit": "f26ad03c9cc243aa3cb8576ad4c2b34ce7c867bd"
+  },
+  "_source": "git://github.com/cobbdb/harmony.git",
+  "_target": "~1.7.0",
+  "_originalSource": "harmony",
+  "_direct": true
+}

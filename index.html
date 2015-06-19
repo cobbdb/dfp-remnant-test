@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+    <script async defer src="//www.googletagservices.com/tag/js/gpt.js"></script>
+    <script src="bower_components/harmony/dist/harmony.min.js"></script>
+</head>
+<body>
+    <div id="slot"></div>
+    <div id="slot"></div>
+    <div id="slot"></div>
+    <div id="slot"></div>
+    <div id="slot"></div>
+    <div id="slot"></div>
+    <script>
+        var googletag = googletag || {
+                cmd: []
+            },
+            harm = Harmony({
+                forceLog: true
+            });
+        googletag.cmd.push(function () {
+            var i, units = [
+                '11347122/www.accessatlanta.com-wired',
+                '11347122/www.accessatlanta.com-wired',
+                '11347122/www.accessatlanta.com-wired',
+                '11347122/www.accessatlanta.com-wired',
+                '11347122/www.accessatlanta.com-wired',
+                '11347122/www.accessatlanta.com-wired'
+            ];
+            units.forEach(function (unitName) {
+                harm.defineSlot({
+                    name: 'slot',
+                    id: 'slot',
+                    sizes: [300, 250],
+                    adunit: unitName,
+                    targeting: {
+                        environ: 'devtest'
+                    },
+                    drone: true,
+                    breakpoint: 'ads'
+                });
+            });
+            googletag.enableServices();
+            harm.show.breakpoint('ads');
+        });
+    </script>
+</body>
+</html>
